@@ -138,7 +138,7 @@ def hdd_tester():
         with open(file, 'w') as f:
             f.write('\n' + drive_)
 
-        cmd = 'sudo badblocks -wsv -e 1 -o /home/green-star/Desktop/' + drive_ + '.txt -c 65536 /dev/' + drive_
+        cmd = 'sudo badblocks -wsv -e 1 -o /home/*user*/Desktop/' + drive_ + '.txt -c 65536 /dev/' + drive_
         print(cmd)
         os.system(cmd)
 
@@ -238,7 +238,7 @@ def a_adv():
     win.grid_columnconfigure(0, weight=1)
     win.grid_columnconfigure(3, weight=1)
 
-    l = Label(win, text='For assistance please find the nearest Green Star employee or senior volunteer.', wraplength=250)
+    l = Label(win, text='test', wraplength=250)
     l.grid(row=0, column=0)
 
     b = Button(win, text="Okay", command=win.destroy)
