@@ -160,7 +160,7 @@ def h_pop():
     win.grid_columnconfigure(0, weight=1)
     win.grid_columnconfigure(3, weight=1)
 
-    l = Label(win, text='For assistance please find the nearest Green Star employee or senior volunteer.', wraplength=250)
+    l = Label(win, text='work in progress', wraplength=250)
     l.grid(row=0, column=0)
 
     b = Button(win, text="Okay", command=win.destroy)
